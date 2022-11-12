@@ -1,0 +1,816 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 55;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		E28F4650292060F200D13E7D /* AlbumArt WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = E28F464F292060F200D13E7D /* AlbumArt WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E28F4656292060F200D13E7D /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E28F4654292060F200D13E7D /* Interface.storyboard */; };
+		E28F4658292060F500D13E7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28F4657292060F500D13E7D /* Assets.xcassets */; };
+		E28F465E292060F500D13E7D /* AlbumArt WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = E28F465D292060F500D13E7D /* AlbumArt WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		E28F4663292060F500D13E7D /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F4662292060F500D13E7D /* InterfaceController.swift */; };
+		E28F4665292060F500D13E7D /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F4664292060F500D13E7D /* ExtensionDelegate.swift */; };
+		E28F4667292060F500D13E7D /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F4666292060F500D13E7D /* NotificationController.swift */; };
+		E28F4669292060F500D13E7D /* ComplicationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F4668292060F500D13E7D /* ComplicationController.swift */; };
+		E28F466B292060F500D13E7D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E28F466A292060F500D13E7D /* Assets.xcassets */; };
+		E28F4677292060F500D13E7D /* AlbumArtTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F4676292060F500D13E7D /* AlbumArtTests.swift */; };
+		E28F4681292060F500D13E7D /* AlbumArtUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F4680292060F500D13E7D /* AlbumArtUITests.swift */; };
+		E28F4683292060F500D13E7D /* AlbumArtUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E28F4682292060F500D13E7D /* AlbumArtUITestsLaunchTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		E28F4651292060F200D13E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28F4645292060F200D13E7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28F464E292060F200D13E7D;
+			remoteInfo = "AlbumArt WatchKit App";
+		};
+		E28F465F292060F500D13E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28F4645292060F200D13E7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28F465C292060F500D13E7D;
+			remoteInfo = "AlbumArt WatchKit Extension";
+		};
+		E28F4673292060F500D13E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28F4645292060F200D13E7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28F465C292060F500D13E7D;
+			remoteInfo = "AlbumArt WatchKit Extension";
+		};
+		E28F467D292060F500D13E7D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = E28F4645292060F200D13E7D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = E28F464E292060F200D13E7D;
+			remoteInfo = "AlbumArt WatchKit App";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		E28F4689292060F500D13E7D /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				E28F465E292060F500D13E7D /* AlbumArt WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F468D292060F500D13E7D /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				E28F4650292060F200D13E7D /* AlbumArt WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		E28F464B292060F200D13E7D /* AlbumArt.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AlbumArt.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F464F292060F200D13E7D /* AlbumArt WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "AlbumArt WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F4655292060F200D13E7D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		E28F4657292060F500D13E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E28F465D292060F500D13E7D /* AlbumArt WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "AlbumArt WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F4662292060F500D13E7D /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		E28F4664292060F500D13E7D /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		E28F4666292060F500D13E7D /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		E28F4668292060F500D13E7D /* ComplicationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComplicationController.swift; sourceTree = "<group>"; };
+		E28F466A292060F500D13E7D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		E28F466C292060F500D13E7D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E28F466D292060F500D13E7D /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		E28F4672292060F500D13E7D /* AlbumArtTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumArtTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F4676292060F500D13E7D /* AlbumArtTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtTests.swift; sourceTree = "<group>"; };
+		E28F467C292060F500D13E7D /* AlbumArtUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AlbumArtUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		E28F4680292060F500D13E7D /* AlbumArtUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtUITests.swift; sourceTree = "<group>"; };
+		E28F4682292060F500D13E7D /* AlbumArtUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlbumArtUITestsLaunchTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		E28F465A292060F500D13E7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F466F292060F500D13E7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F4679292060F500D13E7D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		E28F4644292060F200D13E7D = {
+			isa = PBXGroup;
+			children = (
+				E28F4653292060F200D13E7D /* AlbumArt WatchKit App */,
+				E28F4661292060F500D13E7D /* AlbumArt WatchKit Extension */,
+				E28F4675292060F500D13E7D /* AlbumArtTests */,
+				E28F467F292060F500D13E7D /* AlbumArtUITests */,
+				E28F464C292060F200D13E7D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E28F464C292060F200D13E7D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E28F464B292060F200D13E7D /* AlbumArt.app */,
+				E28F464F292060F200D13E7D /* AlbumArt WatchKit App.app */,
+				E28F465D292060F500D13E7D /* AlbumArt WatchKit Extension.appex */,
+				E28F4672292060F500D13E7D /* AlbumArtTests.xctest */,
+				E28F467C292060F500D13E7D /* AlbumArtUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		E28F4653292060F200D13E7D /* AlbumArt WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				E28F4654292060F200D13E7D /* Interface.storyboard */,
+				E28F4657292060F500D13E7D /* Assets.xcassets */,
+			);
+			path = "AlbumArt WatchKit App";
+			sourceTree = "<group>";
+		};
+		E28F4661292060F500D13E7D /* AlbumArt WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				E28F4662292060F500D13E7D /* InterfaceController.swift */,
+				E28F4664292060F500D13E7D /* ExtensionDelegate.swift */,
+				E28F4666292060F500D13E7D /* NotificationController.swift */,
+				E28F4668292060F500D13E7D /* ComplicationController.swift */,
+				E28F466A292060F500D13E7D /* Assets.xcassets */,
+				E28F466C292060F500D13E7D /* Info.plist */,
+				E28F466D292060F500D13E7D /* PushNotificationPayload.apns */,
+			);
+			path = "AlbumArt WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		E28F4675292060F500D13E7D /* AlbumArtTests */ = {
+			isa = PBXGroup;
+			children = (
+				E28F4676292060F500D13E7D /* AlbumArtTests.swift */,
+			);
+			path = AlbumArtTests;
+			sourceTree = "<group>";
+		};
+		E28F467F292060F500D13E7D /* AlbumArtUITests */ = {
+			isa = PBXGroup;
+			children = (
+				E28F4680292060F500D13E7D /* AlbumArtUITests.swift */,
+				E28F4682292060F500D13E7D /* AlbumArtUITestsLaunchTests.swift */,
+			);
+			path = AlbumArtUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		E28F464A292060F200D13E7D /* AlbumArt */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28F468E292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArt" */;
+			buildPhases = (
+				E28F4649292060F200D13E7D /* Resources */,
+				E28F468D292060F500D13E7D /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E28F4652292060F200D13E7D /* PBXTargetDependency */,
+			);
+			name = AlbumArt;
+			productName = AlbumArt;
+			productReference = E28F464B292060F200D13E7D /* AlbumArt.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		E28F464E292060F200D13E7D /* AlbumArt WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28F468A292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArt WatchKit App" */;
+			buildPhases = (
+				E28F464D292060F200D13E7D /* Resources */,
+				E28F4689292060F500D13E7D /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E28F4660292060F500D13E7D /* PBXTargetDependency */,
+			);
+			name = "AlbumArt WatchKit App";
+			productName = "AlbumArt WatchKit App";
+			productReference = E28F464F292060F200D13E7D /* AlbumArt WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		E28F465C292060F500D13E7D /* AlbumArt WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28F4686292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArt WatchKit Extension" */;
+			buildPhases = (
+				E28F4659292060F500D13E7D /* Sources */,
+				E28F465A292060F500D13E7D /* Frameworks */,
+				E28F465B292060F500D13E7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "AlbumArt WatchKit Extension";
+			productName = "AlbumArt WatchKit Extension";
+			productReference = E28F465D292060F500D13E7D /* AlbumArt WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+		E28F4671292060F500D13E7D /* AlbumArtTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28F4691292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArtTests" */;
+			buildPhases = (
+				E28F466E292060F500D13E7D /* Sources */,
+				E28F466F292060F500D13E7D /* Frameworks */,
+				E28F4670292060F500D13E7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E28F4674292060F500D13E7D /* PBXTargetDependency */,
+			);
+			name = AlbumArtTests;
+			productName = AlbumArtTests;
+			productReference = E28F4672292060F500D13E7D /* AlbumArtTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		E28F467B292060F500D13E7D /* AlbumArtUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E28F4694292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArtUITests" */;
+			buildPhases = (
+				E28F4678292060F500D13E7D /* Sources */,
+				E28F4679292060F500D13E7D /* Frameworks */,
+				E28F467A292060F500D13E7D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				E28F467E292060F500D13E7D /* PBXTargetDependency */,
+			);
+			name = AlbumArtUITests;
+			productName = AlbumArtUITests;
+			productReference = E28F467C292060F500D13E7D /* AlbumArtUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		E28F4645292060F200D13E7D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1340;
+				LastUpgradeCheck = 1340;
+				TargetAttributes = {
+					E28F464A292060F200D13E7D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E28F464E292060F200D13E7D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E28F465C292060F500D13E7D = {
+						CreatedOnToolsVersion = 13.4.1;
+					};
+					E28F4671292060F500D13E7D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E28F465C292060F500D13E7D;
+					};
+					E28F467B292060F500D13E7D = {
+						CreatedOnToolsVersion = 13.4.1;
+						TestTargetID = E28F464E292060F200D13E7D;
+					};
+				};
+			};
+			buildConfigurationList = E28F4648292060F200D13E7D /* Build configuration list for PBXProject "AlbumArt" */;
+			compatibilityVersion = "Xcode 13.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = E28F4644292060F200D13E7D;
+			productRefGroup = E28F464C292060F200D13E7D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				E28F464A292060F200D13E7D /* AlbumArt */,
+				E28F464E292060F200D13E7D /* AlbumArt WatchKit App */,
+				E28F465C292060F500D13E7D /* AlbumArt WatchKit Extension */,
+				E28F4671292060F500D13E7D /* AlbumArtTests */,
+				E28F467B292060F500D13E7D /* AlbumArtUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		E28F4649292060F200D13E7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F464D292060F200D13E7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F4658292060F500D13E7D /* Assets.xcassets in Resources */,
+				E28F4656292060F200D13E7D /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F465B292060F500D13E7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F466B292060F500D13E7D /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F4670292060F500D13E7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F467A292060F500D13E7D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		E28F4659292060F500D13E7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F4667292060F500D13E7D /* NotificationController.swift in Sources */,
+				E28F4669292060F500D13E7D /* ComplicationController.swift in Sources */,
+				E28F4665292060F500D13E7D /* ExtensionDelegate.swift in Sources */,
+				E28F4663292060F500D13E7D /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F466E292060F500D13E7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F4677292060F500D13E7D /* AlbumArtTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E28F4678292060F500D13E7D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E28F4683292060F500D13E7D /* AlbumArtUITestsLaunchTests.swift in Sources */,
+				E28F4681292060F500D13E7D /* AlbumArtUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		E28F4652292060F200D13E7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28F464E292060F200D13E7D /* AlbumArt WatchKit App */;
+			targetProxy = E28F4651292060F200D13E7D /* PBXContainerItemProxy */;
+		};
+		E28F4660292060F500D13E7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28F465C292060F500D13E7D /* AlbumArt WatchKit Extension */;
+			targetProxy = E28F465F292060F500D13E7D /* PBXContainerItemProxy */;
+		};
+		E28F4674292060F500D13E7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28F465C292060F500D13E7D /* AlbumArt WatchKit Extension */;
+			targetProxy = E28F4673292060F500D13E7D /* PBXContainerItemProxy */;
+		};
+		E28F467E292060F500D13E7D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = E28F464E292060F200D13E7D /* AlbumArt WatchKit App */;
+			targetProxy = E28F467D292060F500D13E7D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		E28F4654292060F200D13E7D /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				E28F4655292060F200D13E7D /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		E28F4684292060F500D13E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		E28F4685292060F500D13E7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		E28F4687292060F500D13E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AlbumArt WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AlbumArt WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArt.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E28F4688292060F500D13E7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "AlbumArt WatchKit Extension/Info.plist";
+				INFOPLIST_KEY_CFBundleDisplayName = "AlbumArt WatchKit Extension";
+				INFOPLIST_KEY_CLKComplicationPrincipalClass = "$(PRODUCT_MODULE_NAME).ComplicationController";
+				INFOPLIST_KEY_NSHumanReadableCopyright = "";
+				INFOPLIST_KEY_WKExtensionDelegateClassName = "$(PRODUCT_MODULE_NAME).ExtensionDelegate";
+				INFOPLIST_KEY_WKWatchOnly = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArt.watchkitapp.watchkitextension;
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		E28F468B292060F500D13E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = AlbumArt_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "AlbumArt WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E28F468C292060F500D13E7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IBSC_MODULE = AlbumArt_WatchKit_Extension;
+				INFOPLIST_KEY_CFBundleDisplayName = "AlbumArt WatchKit App";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArt.watchkitapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		E28F468F292060F500D13E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		E28F4690292060F500D13E7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArt;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		E28F4692292060F500D13E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumArt WatchKit Extension.appex/AlbumArt WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E28F4693292060F500D13E7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArtTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AlbumArt WatchKit Extension.appex/AlbumArt WatchKit Extension";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+		E28F4695292060F500D13E7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArtUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "AlbumArt WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Debug;
+		};
+		E28F4696292060F500D13E7D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = bensauberman.AlbumArtUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				TEST_TARGET_NAME = "AlbumArt WatchKit App";
+				WATCHOS_DEPLOYMENT_TARGET = 8.5;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		E28F4648292060F200D13E7D /* Build configuration list for PBXProject "AlbumArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F4684292060F500D13E7D /* Debug */,
+				E28F4685292060F500D13E7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28F4686292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArt WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F4687292060F500D13E7D /* Debug */,
+				E28F4688292060F500D13E7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28F468A292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArt WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F468B292060F500D13E7D /* Debug */,
+				E28F468C292060F500D13E7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28F468E292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArt" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F468F292060F500D13E7D /* Debug */,
+				E28F4690292060F500D13E7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28F4691292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArtTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F4692292060F500D13E7D /* Debug */,
+				E28F4693292060F500D13E7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E28F4694292060F500D13E7D /* Build configuration list for PBXNativeTarget "AlbumArtUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E28F4695292060F500D13E7D /* Debug */,
+				E28F4696292060F500D13E7D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = E28F4645292060F200D13E7D /* Project object */;
+}
